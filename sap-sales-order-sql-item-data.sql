@@ -47,7 +47,7 @@ CREATE TABLE `sap-sales-order-item-data`
   `SDProcessStatus`                varchar(1) DEFAULT NULL,
   `DeliveryStatus`                 varchar(1) DEFAULT NULL,
   `OrderRelatedBillingStatus`      varchar(1) DEFAULT NULL,
-    PRIMARY KEY (`SalesOrder`, `SalesOrderItem`)
+    PRIMARY KEY (`SalesOrder`, `SalesOrderItem`),
     CONSTRAINT `SalesOrder_fk` FOREIGN KEY (`SalesOrder`) REFERENCES `sap-sales-order-header-data` (`SalesOrder`)
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4;

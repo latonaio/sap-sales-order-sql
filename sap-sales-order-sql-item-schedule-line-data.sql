@@ -12,7 +12,7 @@ CREATE TABLE `sap-sales-order-item-schedule-line-data`
   `OpenConfdDelivQtyInOrdQtyUnit`  varchar(15) DEFAULT NULL,
   `CorrectedQtyInOrderQtyUnit`     varchar(15) DEFAULT NULL,
   `DelivBlockReasonForSchedLine`   varchar(2) DEFAULT NULL,
-    PRIMARY KEY (`SalesOrder`, `SalesOrderItem`, `ScheduleLine`)
+    PRIMARY KEY (`SalesOrder`, `SalesOrderItem`, `ScheduleLine`),
     CONSTRAINT `SalesOrder_fk` FOREIGN KEY (`SalesOrder`) REFERENCES `sap-sales-order-header-data` (`SalesOrder`)
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4;
