@@ -1,7 +1,7 @@
 CREATE TABLE `sap-sales-order-item-data`
 (
-  `SalesOrder`                     varchar(10) DEFAULT NULL,
-  `SalesOrderItem`                 varchar(6) DEFAULT NULL,
+  `SalesOrder`                     varchar(10) NOT NULL,
+  `SalesOrderItem`                 varchar(6) NOT NULL,
   `SalesOrderItemCategory`         varchar(4) DEFAULT NULL,
   `SalesOrderItemText`             varchar(40) DEFAULT NULL,
   `PurchaseOrderByCustomer`        varchar(35) DEFAULT NULL,

@@ -1,9 +1,9 @@
 CREATE TABLE `sap-sales-order-item-pricing-element-data`
 (
-  `SalesOrder`                     varchar(10) DEFAULT NULL,
-  `SalesOrderItem`                 varchar(6) DEFAULT NULL,
-  `PricingProcedureStep`           varchar(3) DEFAULT NULL,
-  `PricingProcedureCounter`        varchar(3) DEFAULT NULL,
+  `SalesOrder`                     varchar(10) NOT NULL,
+  `SalesOrderItem`                 varchar(6) NOT NULL,
+  `PricingProcedureStep`           varchar(3) NOT NULL,
+  `PricingProcedureCounter`        varchar(3) NOT NULL,
   `ConditionType`                  varchar(4) DEFAULT NULL,
   `PriceConditionDeterminationDte` date DEFAULT NULL,
   `ConditionCalculationType`       varchar(3) DEFAULT NULL,

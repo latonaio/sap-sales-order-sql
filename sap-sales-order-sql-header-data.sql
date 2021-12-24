@@ -1,6 +1,6 @@
 CREATE TABLE `sap-sales-order-header-data`
 (
-  `SalesOrder`                     varchar(10) DEFAULT NULL,
+  `SalesOrder`                     varchar(10) NOT NULL,
   `SalesOrderItem`                 varchar(6) DEFAULT NULL,
   `SalesOrderItemCategory`         varchar(4) DEFAULT NULL,
   `SalesOrderItemText`             varchar(40) DEFAULT NULL,

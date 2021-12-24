@@ -1,8 +1,8 @@
 CREATE TABLE `sap-sales-order-item-schedule-line-data`
 (
-  `SalesOrder`                     varchar(10) DEFAULT NULL,
-  `SalesOrderItem`                 varchar(6) DEFAULT NULL,
-  `ScheduleLine`                   varchar(3) DEFAULT NULL,
+  `SalesOrder`                     varchar(10) NOT NULL,
+  `SalesOrderItem`                 varchar(6) NOT NULL,
+  `ScheduleLine`                   varchar(3) NOT NULL,
   `RequestedDeliveryDate`          date DEFAULT NULL,
   `ConfirmedDeliveryDate`          date DEFAULT NULL,
   `OrderQuantityUnit`              varchar(3) DEFAULT NULL,
