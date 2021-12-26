@@ -1,11 +1,11 @@
-CREATE TABLE `sap-sales-order-item-pricing-element-data`
+CREATE TABLE `sap_sales_order_item_pricing_element_data`
 (
   `SalesOrder`                     varchar(10) NOT NULL,
   `SalesOrderItem`                 varchar(6) NOT NULL,
   `PricingProcedureStep`           varchar(3) NOT NULL,
   `PricingProcedureCounter`        varchar(3) NOT NULL,
   `ConditionType`                  varchar(4) DEFAULT NULL,
-  `PriceConditionDeterminationDte` date DEFAULT NULL,
+  `PriceConditionDeterminationDte` varchar(80) DEFAULT NULL,
   `ConditionCalculationType`       varchar(3) DEFAULT NULL,
   `ConditionBaseValue`             varchar(13) DEFAULT NULL,
   `ConditionRateValue`             varchar(13) DEFAULT NULL,
@@ -25,6 +25,6 @@ CREATE TABLE `sap-sales-order-item-pricing-element-data`
   `ConditionScaleBasisCurrency`    varchar(5) DEFAULT NULL,
   `ConditionIsManuallyChanged`     tinyint(1) DEFAULT NULL,
     PRIMARY KEY (`SalesOrder`, `SalesOrderItem`, `PricingProcedureStep`, `PricingProcedureCounter`),
-    CONSTRAINT `SalesOrder_fk` FOREIGN KEY (`SalesOrder`) REFERENCES `sap-sales-order-header-data` (`SalesOrder`)
+    CONSTRAINT `SAPSalesOrderItemPricingElementData_fk` FOREIGN KEY (`SalesOrder`) REFERENCES `sap_sales_order_header_data` (`SalesOrder`)
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4;

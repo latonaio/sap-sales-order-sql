@@ -1,4 +1,4 @@
-CREATE TABLE `sap-sales-order-header-data`
+CREATE TABLE `sap_sales_order_header_data`
 (
   `SalesOrder`                     varchar(10) NOT NULL,
   `SalesOrderItem`                 varchar(6) DEFAULT NULL,
@@ -7,7 +7,7 @@ CREATE TABLE `sap-sales-order-header-data`
   `PurchaseOrderByCustomer`        varchar(35) DEFAULT NULL,
   `Material`                       varchar(40) DEFAULT NULL,
   `MaterialByCustomer`             varchar(35) DEFAULT NULL,
-  `PricingDate`                    date default NULL,
+  `PricingDate`                    varchar(80) DEFAULT NULL,
   `BillingPlan`                    varchar(2) DEFAULT NULL,
   `RequestedQuantity`              varchar(17) DEFAULT NULL,
   `RequestedQuantityUnit`          varchar(3) DEFAULT NULL,
@@ -22,7 +22,7 @@ CREATE TABLE `sap-sales-order-header-data`
   `NetAmount`                      varchar(17) DEFAULT NULL,
   `MaterialGroup`                  varchar(9) DEFAULT NULL,
   `MaterialPricingGroup`           varchar(2) DEFAULT NULL,
-  `BillingDocumentDate`            date DEFAULT NULL,
+  `BillingDocumentDate`            varchar(80) DEFAULT NULL,
   `Batch`                          varchar(10) DEFAULT NULL,
   `ProductionPlant`                varchar(4) DEFAULT NULL,
   `StorageLocation`                varchar(4) DEFAULT NULL,
